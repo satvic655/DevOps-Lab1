@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Git Project</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .card {
+            max-width: 600px;
+            margin: auto;
+            padding: 30px;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #2563eb;
+        }
+
+        p {
+            color: #444;
+            line-height: 1.6;
+        }
+
+        button {
+            padding: 12px 24px;
+            background-color: #2563eb;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #1d4ed8;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <h1>Welcome to git lab1</h1>
+
+        <p>
+            I am learning Git and GitHub as part of my DevOps laboratory.
+        </p>
+
+        <p id="message">This is version 1 of my webpage.</p>
+
+        <button onclick="showMessage()">Click Me</button>
+    </div>
+
+    <script>
+        function showMessage() {
+            document.getElementById("message").textContent =
+                "Hello! I am learning Git version control.";
+        }
+    </script>
+</body>
+</html>
